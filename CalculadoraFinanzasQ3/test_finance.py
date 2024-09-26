@@ -5,7 +5,14 @@ def main():
     #creamos un diccionario para almacenar cuentas
     accounts = []
     create_account = []
+    add_transaction = []
+    get_account_balance = []
+    get_total_balance = []
     
+
+
+    
+
     while True: 
        print(" Bienvenidosala calculada ")
        print("1. crear cuenta")
@@ -31,7 +38,7 @@ def main():
         #consultar saldo de cuenta
        elif option == 3:
             account_id = int(input("ingrese el id de la cuenta"))
-            balance = get_acount_balance(accounts,account_id)
+            balance = get_account_balance(accounts,account_id)
             print(f"El saldo de la cuenta {account_id} es {balance}")
 
         # consultar saldo total cuenta
@@ -45,7 +52,7 @@ def main():
            #salimos del ciclo
            break
        
-       
+
        
 
        
